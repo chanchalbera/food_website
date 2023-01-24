@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Order your favorite dishes | Asian Food Resto.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+
+        <div id="navbar">
+            <div id="logo">
+                <img src="logo.jpg" alt="remote image">
+            </div>
+            <div id="mid">
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div id="right">
+                <button onclick="darkMode()">Dark Mode</button>
+                <button onclick="lightMode()">Light Mode</button>
+                <button>Order Online</button>
+                <button class="button-color">Reservate</button>
+            </div>
+
+    </nav>
+    </div>
+    </nav>
+    <!-- home section -->
+    <section>
+        <div id="home-section">
+            <div id="home">
+                <h2>The best place to eat burgers in IND</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaq, amet consectetur adipisicing elit.
+                    Adaesentium.</p>
+                    <br>
+                    <br>
+                    <button>Order Online</button>
+                    <button class="button-color">Reservate</button>
+                </div>
+                <h3 id="DarkModetext">Dark Mode is OFF</h3>
+            <div id="home1">
+                <img src="picture1.avif" alt="">
+
+            </div>
+        </div>
+    </section>
+    <!-- about us section -->
+    <section>
+        <h1>About us </h1>
+        <div id="about">
+            <div class="about-container">
+                <h2>Our story started</h2>
+                <h2>back in <strong>1984.</strong></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit iste eveniet blanditiis
+                    voluptas ullam cupiditate earum obcaecati? Dolores laborum perferendis earum repellat accusamus?
+                    Cupiditate, repellat nobis. Placeat odit id praesentium.</p>
+                <img src="picture2.jfif" alt="">
+            </div>
+
+            <div class="about-container">
+                <img src="about section image.webp" alt="">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- menu section -->
+    <section><div id="menu-section">
+
+        <h1>Our menu</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque sunt magni repel lat? lorem12 </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        <p>Lorem, ipsum dolor.</p>
+        <button class="active">All</button><button class="button">Breakfast</button><button class="button">Main Dishes</button><button class="button">Drinks</button><button class="button">Dishes</button>
+    </div>
+        <div id="menu">
+            <div class="menu-item-container">
+                <img src="classic burgers.jfif" alt="" height="200px">
+
+               <p>
+                
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum illo cupiditate amet deleniti minus ex quo nihil laboriosam voluptas. Provident, perferendis explicabo officia unde autem cupiditate qui esse 
+                pariatur necessitatibus.
+            </p>
+            </div>
+            <div class="menu-item-container">
+                
+                    <img src="chocolate-milkshake.webp" alt="" height="200px">
+                    
+               <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum illo cupiditate amet deleniti minus ex quo nihil laboriosam voluptas. Provident, perferendis explicabo officia unde autem cupiditate qui esse pariatur necessitatibus.</p>
+                
+            </div>
+            <div class="menu-item-container">
+                <img src="classic fries.jpg" alt="" height="200px">
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum illo cupiditate amet deleniti minus ex quo nihil laboriosam voluptas. Provident, perferendis explicabo officia unde autem cupiditate qui esse pariatur necessitatibus.</p>
+                
+            </div>
+            <div class="menu-item-container">
+                <img src="pancake.webp" alt="" height="200px" width="600px" >
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum illo cupiditate amet deleniti minus ex quo nihil laboriosam voluptas. Provident, perferendis explicabo officia unde autem cupiditate qui esse pariatur necessitatibus.</p>
+
+            </div>
+
+        </div>
+    </section>
+         
+    </section>
+
+
+    <script>
+        
+        function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode is ON";
+            
+            
+        }
+        
+     
+        
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode is OFF";
+        }
+    </script>
+</body>
+
+
+
+</html>
