@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Order your favorite dishes | Asian Food Resto.com</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -19,35 +20,40 @@
             <div id="mid">
 
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#home-section">Home</a></li>
+                    <li><a href="#Our_story">About us</a></li>
+                    <li><a href="#menu-section">Menu</a></li>
+                    <li><a href="#contact_us">Contact us</a></li>
                 </ul>
             </div>
             <div id="right">
-                <button onclick="darkMode()">Dark Mode</button>
-                <button onclick="lightMode()">Light Mode</button>
-                <button>Order Online</button>
+                <!-- <button onclick="darkMode()">Dark Mode</button>
+                <button onclick="lightMode()">Light Mode</button> -->
+                <button class="button-another-color">Order Online</button>
                 <button class="button-color">Reservate</button>
             </div>
 
+        </div>
     </nav>
-    </div>
-    </nav>
+
     <!-- home section -->
     <section>
         <div id="home-section">
             <div id="home">
-                <h2>The best place to eat burgers in IND</h2>
+                <h2>The best place to eat burgers in <span>IND</span></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaq, amet consectetur adipisicing elit.
                     Adaesentium.</p>
-                    <br>
-                    <br>
-                    <button>Order Online</button>
-                    <button class="button-color">Reservate</button>
-                </div>
-                <h3 id="DarkModetext">Dark Mode is OFF</h3>
+                <br>
+                <br>
+                <button>Order Online</button>
+                <button class="button-color">Reservate</button>
+
+                <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_snmohqxj/lottie_step2/data.json"
+                    background="transparent" speed="2" style="width: 300px; height: 300px;" loop
+                    autoplay></lottie-player>
+
+            </div>
+            <!-- <h3 id="DarkModetext">Dark Mode is OFF</h3> -->
             <div id="home1">
                 <img src="picture1.avif" alt="">
 
@@ -55,13 +61,13 @@
         </div>
     </section>
     <!-- about us section -->
-    <section>
+    <section id="Our_story">
         <h1>About us </h1>
         <div id="about">
             <div class="about-container">
                 <h2>Our story started</h2>
                 <h2>back in <strong>1984.</strong></h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit iste eveniet blanditiis
+                <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit iste eveniet blanditiis
                     voluptas ullam cupiditate earum obcaecati? Dolores laborum perferendis earum repellat accusamus?
                     Cupiditate, repellat nobis. Placeat odit id praesentium.</p>
                 <img src="picture2.jfif" alt="">
@@ -69,74 +75,143 @@
 
             <div class="about-container">
                 <img src="about section image.webp" alt="">
+                <lottie-player class="about-animation"
+                    src="https://assets1.lottiefiles.com/packages/lf20_4L6JjAIiVL.json" background="transparent"
+                    speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
 
             </div>
         </div>
     </section>
 
     <!-- menu section -->
-    <section><div id="menu-section">
+    <section>
+        <div id="menu-section">
 
-        <h1>Our menu</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque sunt magni repel lat? lorem12 </p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-        <p>Lorem, ipsum dolor.</p>
-        <button class="active">All</button><button class="button">Breakfast</button><button class="button">Main Dishes</button><button class="button">Drinks</button><button class="button">Dishes</button>
-    </div>
+            <h1>Our menu</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque sunt magni repel lat? lorem12 </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            <p>Lorem, ipsum dolor.</p>
+            <button class="active">All</button><button class="button">Breakfast</button><button class="button">Main
+                Dishes</button><button class="button">Drinks</button><button class="button">Dishes</button>
+        </div>
         <div id="menu">
             <div class="menu-item-container">
-                <img src="classic burgers.jfif" alt="" height="200px">
+                <!-- <img class="image" src="classic burgers.jfif" alt=""> -->
+                <div class="lottie-player">
 
-               <p>
-                
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum illo cupiditate amet deleniti minus ex quo nihil laboriosam voluptas. Provident, perferendis explicabo officia unde autem cupiditate qui esse 
-                pariatur necessitatibus.
-            </p>
+                    <lottie-player class="image" src="https://assets10.lottiefiles.com/packages/lf20_xzp76fg7.json"
+                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                        autoplay></lottie-player>
+                </div>
+                <h2>Classic Burger</h2>
+
+                <p>
+
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum illo cupiditate amet deleniti minus ex
+                    quo nihil laboriosam voluptas. Provident, perferendis explicabo
+                </p>
             </div>
             <div class="menu-item-container">
-                
-                    <img src="chocolate-milkshake.webp" alt="" height="200px">
-                    
-               <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum illo cupiditate amet deleniti minus ex quo nihil laboriosam voluptas. Provident, perferendis explicabo officia unde autem cupiditate qui esse pariatur necessitatibus.</p>
-                
-            </div>
-            <div class="menu-item-container">
-                <img src="classic fries.jpg" alt="" height="200px">
-            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum illo cupiditate amet deleniti minus ex quo nihil laboriosam voluptas. Provident, perferendis explicabo officia unde autem cupiditate qui esse pariatur necessitatibus.</p>
-                
-            </div>
-            <div class="menu-item-container">
-                <img src="pancake.webp" alt="" height="200px" width="600px" >
-            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum illo cupiditate amet deleniti minus ex quo nihil laboriosam voluptas. Provident, perferendis explicabo officia unde autem cupiditate qui esse pariatur necessitatibus.</p>
+
+                <div class="lottie-player">
+
+                    <lottie-player class="image" src="https://assets9.lottiefiles.com/packages/lf20_fbefhc1q.json"
+                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                        autoplay></lottie-player>
+                </div>
+                <h2>Milkshake</h2>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum illo cupiditate amet deleniti minus ex
+                    quo nihil laboriosam voluptas. Provident, perferendis.</p>
 
             </div>
+            <div class="menu-item-container">
+                <div class="lottie-player">
+                    <lottie-player class="image" src="https://assets4.lottiefiles.com/packages/lf20_mS0arCSu1r.json"
+                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                        autoplay></lottie-player>
+                </div>
+                <h2>Classic Fries</h2>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum illo cupiditate amet deleniti minus ex
+                    quo nihil laboriosam voluptas. Provident, perferendis.</p>
 
+            </div>
+            <div class="menu-item-container">
+                <div class="lottie-player">
+                    <lottie-player class="image" src="https://assets6.lottiefiles.com/packages/lf20_ex0com6r.json"
+                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                        autoplay></lottie-player>
+                </div>
+                <h2>Pancake</h2>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum illo cupiditate amet deleniti minus ex
+                    quo nihil laboriosam voluptas. Provident, perferendis explicabo</p>
+
+            </div>
         </div>
     </section>
-         
+    <h1>Contact us</h1>
+
+    <div id="contact_us">
+        <div class="contact">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis minima nihil vero, a
+                quis, magnam ea numq.</p>
+            <div class="contact-container" id="contact-border">
+                <div class="image-map">
+                    <img id="map-image" src="map.jpg" alt="">
+                </div>
+                <div>
+                    <section class="section-another">
+
+                        943-968G, lorema
+                        <br>
+                        West Bengal, 72104
+                    </section>
+                </div>
+
+            </div>
+            <div class="contact-container">
+                <img src="telephone.jfif" alt="" id="call-image">
+                <section class="section-another">
+
+                    (919)342-0120
+                </section>
+            </div>
+            <div class="contact-container">
+                <img src="email.png" alt="" id="email-image">
+                <section class="section-another">
+
+                    lorem234@gmail.com
+                </section>
+
+            </div>
+
+
+        </div>
+        <div class="contact" class="contact_section">
+            <form action="">
+                <p>Name:</p><input type="text" name="name" placeholder="  Enter your name">
+                <p>Email Address: </p> <input type="text" placeholder="    example@gmail.com">
+                <p>Mobile No:</p> <input type="number" placeholder="  Enter your mobile no">
+                <p>Subject:</p> <input type="text" placeholder="  Ex.Reservation">
+                <p>Message:</p> <textarea name="" id="" cols="30" rows="10"></textarea>
+            </form>
+            <button id="contact_us_button" type="submit">Send Message</button>
+        </div>
+    </div>
+
     </section>
 
 
-    <script>
-        
-        function darkMode() {
-            let element = document.body;
-            let content = document.getElementById("DarkModetext");
-            
-            element.className = "dark-mode";
-            content.innerText = "Dark Mode is ON";
-            
-            
-        }
-        
-     
-        
-        function lightMode() {
-            let element = document.body;
-            let content = document.getElementById("DarkModetext");
-            element.className = "light-mode";
-            content.innerText = "Dark Mode is OFF";
-        }
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
+
+
+        // function displaytime(){
+        //     time = new Date();
+        //     console.log(time);
+        //     document.getElementById('time').innerHTML=time;
+
+        // }
+        // setInterval(displaytime,   2000);
     </script>
 </body>
 
